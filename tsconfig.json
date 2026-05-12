@@ -17,7 +17,20 @@
       "dom"
     ],
     "plugins": [
-      { "name": "tslint-language-service"}
-    ]
-  }
+      {
+        "name": "tslint-language-service"
+      }
+    ],
+    "resolveJsonModule": true, 
+    "esModuleInterop": true, // Importante para imports de módulos
+    "skipLibCheck": true // Evita problemas con tipos de bibliotecas
+  },
+    "include": [
+    "**/*.ts",
+    "**/*.json"  // Esto incluye archivos JSON
+  ],
+    "exclude": [
+    "node_modules",
+    "dist"  // Excluye la carpeta de salida
+  ]
 }
